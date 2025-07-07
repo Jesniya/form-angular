@@ -1,0 +1,51 @@
+ <form id="form" autocomplete="off" >
+    <div class="form-body"> 
+      <!-- <label for="apiKey">API Key</label><br>
+      <input style="padding-right: 150px;" id="apiKey" name="apiKey" type="text" class="api" required><br> -->
+
+        <label class="prdct-nm" style="margin-top: 30px;"> Tax ID </label><br>
+        <input #taxInput style="padding-right: 150px;" id="TaxID" class="inpt-pnm2" type="number"  name="TaxID" [(ngModel)]="formobj.TaxID" required [readonly]="isEditMode" [class.dimmed]="isEditMode" ><br>
+          
+        <div class="catgry">
+         <label>Name</label><br>
+         <input #nameInput style="padding-right: 150px; margin-top: 5px;" id="Name" [(ngModel)]="formobj.Name" name="Name"   type="text" required><br>
+        </div>
+         <div class="brnd"><label>Rate </label><br>
+           <input style="padding-right: 150px;" id="Rate"  class="int-brnd" type="number" [(ngModel)]="formobj.Rate" name="Rate" required ><br>
+           <!-- <span *ngIf="formobj.Rate !== undefined && formobj.Rate !== null">{{ formobj.Rate | currency }}</span> -->
+          </div>
+         <div class="pric"><label>Inactive </label><br>
+           <input  style="padding-right: 150px;" id="Inactive" class="int-pric" type="checkbox" name="Inactive" [(ngModel)]="formobj.Inactive" >
+         </div>
+         <button  class="btn-cncl" type="submit" (click)="onSubmit()" >{{ isEditMode ? 'UPDATE' : 'SUBMIT' }}</button>
+         <!-- <button  class="btn-list" type="submit" (click)="fetchAndDisplayData()" >LIST</button> -->
+    </div>
+</form><br><br><br><br> 
+
+<div class="tablemain">
+<table class="table" cellspacing="5" cellpadding="5" style="align-content:center ;">
+  <thead>
+    <tr >
+      <th style="background-color: gray; color: brown;" scope="col">SL.NO</th>
+      <th style="background-color: gray;" scope="col">NAME</th>
+      <th style="background-color: gray;" scope="col">TAX ID</th>
+      <th style="background-color: gray;" scope="col">STATUS</th>
+      <th class="action" style="background-color: gray;" scope="col">ACTION</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of tableData ; let i = index;"
+    [class.highlighted-row]="i === hoveredRowIndex">
+      <th style="color: brown;" [class.highlighted-row]="i === hoveredRowIndex" scope="row">{{i+1}}</th>
+      <td [class.highlighted-row]="i === hoveredRowIndex">{{item.Name}}</td>
+      <td [class.highlighted-row]="i === hoveredRowIndex">{{item.TaxID}}</td>
+      <td [class.highlighted-row]="i === hoveredRowIndex">{{ item.Rate | currency }}</td>
+      <td [class.highlighted-row]="i === hoveredRowIndex">{{item.Inactive}}</td>
+      <button class="btn-edit"  (click)="editRow(item)" (mouseover)="setHoveredRow(i)" (mouseout)="setHoveredRow(null)" >Edit</button>
+      
+      
+    </tr>
+   
+  </tbody>
+</table>
+</div>

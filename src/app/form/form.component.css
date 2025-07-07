@@ -1,0 +1,129 @@
+form{
+    border: 1px rgb(231, 218, 218) solid;
+    padding-left: 20PX;
+   margin-top: 100PX;
+   margin-left: 450PX;
+   margin-right: 450PX;
+   padding-top: 70PX;
+   padding-bottom: 50PX;
+   background-color: rgb(248, 248, 246);
+   font-family:'Times New Roman', Times, serif;
+   font-weight: bold;
+   color: rgb(46, 45, 45);
+
+}
+.frm-img{
+ margin-top:20px;
+ margin-left: 60px;
+}
+.inpt-pnm2{
+    
+    margin-top: 5px;
+}
+.catgry{
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+.inpt-catgry{
+    margin-left: 31px;
+    padding-right: 88px;
+    padding-top: 10px;
+    padding-bottom: 3px;
+   
+}
+.inpt-qutity{
+    margin-left: 38px;
+   
+    margin-bottom: 20px;
+}
+.int-brnd{
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+.int-phto{
+    margin-left:65px ;
+    margin-bottom: 40px;
+    margin-top: -20px;
+   ;
+}
+.int-pric{
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.btn-cncl{
+    border-radius: 5px 5px 5px  ;
+    margin-left: 130PX;
+    margin-top: 30PX;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 2PX rgb(17, 11, 70)  solid;
+    background-color: rgb(17, 11, 70)  ;
+    color: white;
+    
+}
+.btn-cncl:hover{
+    background-color: rgb(209, 206, 206);
+    border-color: rgb(48, 47, 47);
+    color: rgb(21, 21, 52);
+}
+
+.form-body{
+    margin-left: 60px;
+    color:  rgb(17, 11, 70);
+    font-weight: 500;
+    font-weight: bold;
+    font-size: 15px;
+    
+}
+.btn-back{
+    border-radius: 5px 5px 5px  ;
+   margin-left: 50px;
+    margin-top: 30PX;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 2PX rgb(17, 11, 70)  solid;
+    background-color: rgb(17, 11, 70)  ;
+    color: white;
+}
+.api{
+    margin-bottom: 20px;
+    margin-top: 6px;
+} 
+.btn-edit{
+    border-radius: 3px;
+    padding-right: 10px;
+    padding-left: 10px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:rgb(15, 15, 52);
+    color: white;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.btn-edit:hover{
+    background-color: white;
+    color: rgb(26, 121, 45);
+    border-color:rgb(26, 121, 45); ;
+}
+.dimmed{
+    opacity: 0.5;
+}
+
+
+.highlighted-row {
+    background-color: #c8c3c3; /* or any other color you prefer */
+  }
+.tablemain{
+    /* padding: 10px; */
+    border: 1px black solid;
+    margin: 30px;
+}
+.action{
+    padding-left: -20px;
+}
