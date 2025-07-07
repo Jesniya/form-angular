@@ -74,6 +74,7 @@ export class FormComponent implements OnInit{
           Rate: +this.formobj.Rate,
           Inactive:inactiveString,
         };
+        // console.log
         console.log("hi",)
        
         this.api.updateData(originalTaxID, updatedData, api_key).subscribe(
